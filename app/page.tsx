@@ -6,7 +6,7 @@ import { AlertTriangle } from "lucide-react"
 
 export default function Home() {
   return (
-    <div className="container px-4 mx-auto px-4 py-8 md:py-12">
+    <div className="container mx-auto px-4 py-8 md:py-12">
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">XScraper Twitter API</h1>
         <p className="text-lg mb-8 text-gray-300">Powerful API for scraping and analyzing Twitter data</p>

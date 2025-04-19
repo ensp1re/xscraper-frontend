@@ -19,7 +19,7 @@ export default function AdvancedSearchPage() {
   const [tryItOpen, setTryItOpen] = useState(false)
 
   return (
-    <div className="container px-4 px-4 py-6 md:py-10 max-w-5xl">
+    <div className="container px-4 py-6 md:py-10 max-w-5xl">
       <EndpointHeader
         title="Advanced Search"
         description="Search for tweets using advanced query parameters"
