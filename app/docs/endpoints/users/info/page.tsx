@@ -20,7 +20,7 @@ export default function UserInfoPage() {
       <EndpointHeader
         title="Get User Info"
         description="Get user info by screen name"
-        endpoint="GET /twitter/users/profile_by_username/:username"
+        endpoint="GET /api/v1/twitter/users/profile_by_username/:username"
         badge="GET"
       />
 
