@@ -64,8 +64,8 @@ export default function TryItDialog({ open, onOpenChange, endpoint, method, para
     const queryParams = Object.keys(paramValues)
       .filter((param) => !endpoint.includes(`:${param}`) && paramValues[param])
       .map((param) => {
-        // Special handling for advanced search mode parameter
-        if (param === "mode" && endpoint.includes("advanced_search")) {
+        // Special handling for mode parameter (Latest = 1, Top = 0)
+        if (param === "mode" && (endpoint.includes("advanced_search") || endpoint.includes("tweets/search"))) {
           // Convert mode string to numeric value (Latest = 1, Top = 0)
           const modeValue = paramValues[param] === "Latest" ? "1" : "0"
           return `${param}=${modeValue}`

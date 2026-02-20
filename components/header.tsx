@@ -61,6 +61,14 @@ export default function Header() {
           title: "Get User Following",
           href: "/docs/endpoints/users/following",
         },
+        {
+          title: "Get User ID",
+          href: "/docs/endpoints/users/user-id",
+        },
+        {
+          title: "Get User Likes",
+          href: "/docs/endpoints/users/likes",
+        },
       ],
     },
     {
@@ -86,8 +94,44 @@ export default function Header() {
       href: "/docs/endpoints/search",
       children: [
         {
+          title: "Search Tweets",
+          href: "/docs/endpoints/search/basic",
+        },
+        {
+          title: "Search Profiles",
+          href: "/docs/endpoints/search/profiles",
+        },
+        {
           title: "Advanced Search",
           href: "/docs/endpoints/search/advanced",
+        },
+      ],
+    },
+    {
+      title: "List Endpoints",
+      href: "/docs/endpoints/lists",
+      children: [
+        {
+          title: "Get List Tweets",
+          href: "/docs/endpoints/lists/tweets",
+        },
+      ],
+    },
+    {
+      title: "Other Endpoints",
+      href: "/docs/endpoints/trends",
+      children: [
+        {
+          title: "Get Trends",
+          href: "/docs/endpoints/trends",
+        },
+        {
+          title: "Health Check",
+          href: "/docs/endpoints/health",
+        },
+        {
+          title: "Pool Statistics",
+          href: "/docs/endpoints/stats",
         },
       ],
     },
