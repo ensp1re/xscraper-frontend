@@ -93,14 +93,14 @@ export default function UserLikesPage() {
             <CodeBlock
               language="bash"
               code={`curl -X GET \\
-  "https://api.xscraper.xyz/api/v1/twitter/users/likes/elonmusk?count=20" \\
+  "https://api.xscraper.online/api/v1/twitter/users/likes/elonmusk?count=20" \\
   -H "X-API-Key: <your-api-key>"`}
             />
           </TabsContent>
           <TabsContent value="javascript" className="mt-2">
             <CodeBlock
               language="javascript"
-              code={`fetch('https://api.xscraper.xyz/api/v1/twitter/users/likes/elonmusk?count=20', {
+              code={`fetch('https://api.xscraper.online/api/v1/twitter/users/likes/elonmusk?count=20', {
   method: 'GET',
   headers: {
     'X-API-Key': '<your-api-key>'
@@ -116,7 +116,7 @@ export default function UserLikesPage() {
               language="python"
               code={`import requests
 
-url = "https://api.xscraper.xyz/api/v1/twitter/users/likes/elonmusk"
+url = "https://api.xscraper.online/api/v1/twitter/users/likes/elonmusk"
 params = {
     "count": 20
 }
@@ -136,7 +136,7 @@ print(data)`}
 $curl = curl_init();
 
 curl_setopt_array($curl, [
-  CURLOPT_URL => "https://api.xscraper.xyz/api/v1/twitter/users/likes/elonmusk?count=20",
+  CURLOPT_URL => "https://api.xscraper.online/api/v1/twitter/users/likes/elonmusk?count=20",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_HTTPHEADER => [
     "X-API-Key: <your-api-key>"
@@ -168,7 +168,7 @@ import (
 )
 
 func main() {
-	url := "https://api.xscraper.xyz/api/v1/twitter/users/likes/elonmusk?count=20"
+	url := "https://api.xscraper.online/api/v1/twitter/users/likes/elonmusk?count=20"
 	
 	req, _ := http.NewRequest("GET", url, nil)
 	req.Header.Add("X-API-Key", "<your-api-key>")
@@ -193,7 +193,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://api.xscraper.xyz/api/v1/twitter/users/likes/elonmusk?count=20"))
+                .uri(URI.create("https://api.xscraper.online/api/v1/twitter/users/likes/elonmusk?count=20"))
                 .header("X-API-Key", "<your-api-key>")
                 .GET()
                 .build();

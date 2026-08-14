@@ -83,14 +83,14 @@ export default function TweetQuotesPage() {
             <CodeBlock
               language="bash"
               code={`curl -X GET \\
-"https://api.xscraper.xyz/api/v1/twitter/tweets/1722715025402413077/quotes" \\
+"https://api.xscraper.online/api/v1/twitter/tweets/1722715025402413077/quotes" \\
 -H "X-API-Key: <your-api-key>"`}
             />
           </TabsContent>
           <TabsContent value="javascript" className="mt-2">
             <CodeBlock
               language="javascript"
-              code={`fetch('https://api.xscraper.xyz/api/v1/twitter/tweets/1722715025402413077/quotes', {
+              code={`fetch('https://api.xscraper.online/api/v1/twitter/tweets/1722715025402413077/quotes', {
   method: 'GET',
   headers: {
     'X-API-Key': '<your-api-key>'
@@ -106,7 +106,7 @@ export default function TweetQuotesPage() {
               language="python"
               code={`import requests
 
-url = "https://api.xscraper.xyz/api/v1/twitter/tweets/1722715025402413077/quotes"
+url = "https://api.xscraper.online/api/v1/twitter/tweets/1722715025402413077/quotes"
 headers = {
   "X-API-Key": "<your-api-key>"
 }

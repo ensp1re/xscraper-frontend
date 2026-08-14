@@ -26,7 +26,7 @@ export default function AuthenticationPage() {
               <CodeBlock
                 language="bash"
                 code={`curl -X GET \\
-https://api.xscraper.xyz/api/v1/twitter/users/profile_by_username/elonmusk \\
+https://api.xscraper.online/api/v1/twitter/users/profile_by_username/elonmusk \\
 -H "X-API-Key: your_api_key_here"`}
               />
             </CardContent>

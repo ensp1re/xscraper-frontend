@@ -166,14 +166,14 @@ export default function AdvancedSearchPage() {
             <CodeBlock
               language="bash"
               code={`curl -X GET \\
-"https://api.xscraper.xyz/api/v1/twitter/tweets/advanced_search?query=from:elonmusk&mode=1" \\
+"https://api.xscraper.online/api/v1/twitter/tweets/advanced_search?query=from:elonmusk&mode=1" \\
 -H "X-API-Key: <your-api-key>"`}
             />
           </TabsContent>
           <TabsContent value="javascript" className="mt-2">
             <CodeBlock
               language="javascript"
-              code={`fetch('https://api.xscraper.xyz/api/v1/twitter/tweets/advanced_search?query=from:elonmusk&mode=1', {
+              code={`fetch('https://api.xscraper.online/api/v1/twitter/tweets/advanced_search?query=from:elonmusk&mode=1', {
 method: 'GET',
 headers: {
   'X-API-Key': '<your-api-key>'
@@ -189,7 +189,7 @@ headers: {
               language="python"
               code={`import requests
 
-url = "https://api.xscraper.xyz/api/v1/twitter/tweets/advanced_search"
+url = "https://api.xscraper.online/api/v1/twitter/tweets/advanced_search"
 params = {
   "query": "from:elonmusk",
   "mode": 1

@@ -90,14 +90,14 @@ export default function SearchProfilesPage() {
             <CodeBlock
               language="bash"
               code={`curl -X GET \\
-"https://api.xscraper.xyz/api/v1/twitter/users/search_profiles?query=elon" \\
+"https://api.xscraper.online/api/v1/twitter/users/search_profiles?query=elon" \\
 -H "X-API-Key: <your-api-key>"`}
             />
           </TabsContent>
           <TabsContent value="javascript" className="mt-2">
             <CodeBlock
               language="javascript"
-              code={`fetch('https://api.xscraper.xyz/api/v1/twitter/users/search_profiles?query=elon', {
+              code={`fetch('https://api.xscraper.online/api/v1/twitter/users/search_profiles?query=elon', {
 method: 'GET',
 headers: {
   'X-API-Key': '<your-api-key>'
@@ -113,7 +113,7 @@ headers: {
               language="python"
               code={`import requests
 
-url = "https://api.xscraper.xyz/api/v1/twitter/users/search_profiles"
+url = "https://api.xscraper.online/api/v1/twitter/users/search_profiles"
 params = {
   "query": "elon"
 }

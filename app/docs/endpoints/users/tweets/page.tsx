@@ -84,14 +84,14 @@ export default function UserTweetsPage() {
             <CodeBlock
               language="bash"
               code={`curl -X GET \\
-  "https://api.xscraper.xyz/api/v1/twitter/users/tweets/elonmusk?maxTweets=20" \\
+  "https://api.xscraper.online/api/v1/twitter/users/tweets/elonmusk?maxTweets=20" \\
   -H "X-API-Key: <your-api-key>"`}
             />
           </TabsContent>
           <TabsContent value="javascript" className="mt-2">
             <CodeBlock
               language="javascript"
-              code={`fetch('https://api.xscraper.xyz/api/v1/twitter/users/tweets/elonmusk?maxTweets=20', {
+              code={`fetch('https://api.xscraper.online/api/v1/twitter/users/tweets/elonmusk?maxTweets=20', {
   method: 'GET',
   headers: {
     'X-API-Key': '<your-api-key>'
@@ -107,7 +107,7 @@ export default function UserTweetsPage() {
               language="python"
               code={`import requests
 
-url = "https://api.xscraper.xyz/api/v1/twitter/users/tweets/elonmusk"
+url = "https://api.xscraper.online/api/v1/twitter/users/tweets/elonmusk"
 params = {
   "maxTweets": 20
 }

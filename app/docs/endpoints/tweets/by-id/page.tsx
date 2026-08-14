@@ -77,14 +77,14 @@ export default function TweetByIdPage() {
             <CodeBlock
               language="bash"
               code={`curl -X GET \\
-"https://api.xscraper.xyz/api/v1/twitter/tweets/1722715025402413077" \\
+"https://api.xscraper.online/api/v1/twitter/tweets/1722715025402413077" \\
 -H "X-API-Key: <your-api-key>"`}
             />
           </TabsContent>
           <TabsContent value="javascript" className="mt-2">
             <CodeBlock
               language="javascript"
-              code={`fetch('https://api.xscraper.xyz/api/v1/twitter/tweets/1722715025402413077', {
+              code={`fetch('https://api.xscraper.online/api/v1/twitter/tweets/1722715025402413077', {
   method: 'GET',
   headers: {
     'X-API-Key': '<your-api-key>'
@@ -100,7 +100,7 @@ export default function TweetByIdPage() {
               language="python"
               code={`import requests
 
-url = "https://api.xscraper.xyz/api/v1/twitter/tweets/1722715025402413077"
+url = "https://api.xscraper.online/api/v1/twitter/tweets/1722715025402413077"
 headers = {
   "X-API-Key": "<your-api-key>"
 }

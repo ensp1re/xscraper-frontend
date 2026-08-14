@@ -68,14 +68,14 @@ export default function PoolStatsPage() {
             <CodeBlock
               language="bash"
               code={`curl -X GET \\
-"https://api.xscraper.xyz/api/v1/twitter/stats" \\
+"https://api.xscraper.online/api/v1/twitter/stats" \\
 -H "X-API-Key: <your-api-key>"`}
             />
           </TabsContent>
           <TabsContent value="javascript" className="mt-2">
             <CodeBlock
               language="javascript"
-              code={`fetch('https://api.xscraper.xyz/api/v1/twitter/stats', {
+              code={`fetch('https://api.xscraper.online/api/v1/twitter/stats', {
   method: 'GET',
   headers: {
     'X-API-Key': '<your-api-key>'
@@ -91,7 +91,7 @@ export default function PoolStatsPage() {
               language="python"
               code={`import requests
 
-url = "https://api.xscraper.xyz/api/v1/twitter/stats"
+url = "https://api.xscraper.online/api/v1/twitter/stats"
 headers = {
   "X-API-Key": "<your-api-key>"
 }

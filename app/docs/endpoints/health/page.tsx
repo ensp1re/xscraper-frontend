@@ -68,14 +68,14 @@ export default function HealthCheckPage() {
             <CodeBlock
               language="bash"
               code={`curl -X GET \\
-"https://api.xscraper.xyz/api/v1/twitter/health" \\
+"https://api.xscraper.online/api/v1/twitter/health" \\
 -H "X-API-Key: <your-api-key>"`}
             />
           </TabsContent>
           <TabsContent value="javascript" className="mt-2">
             <CodeBlock
               language="javascript"
-              code={`fetch('https://api.xscraper.xyz/api/v1/twitter/health', {
+              code={`fetch('https://api.xscraper.online/api/v1/twitter/health', {
   method: 'GET',
   headers: {
     'X-API-Key': '<your-api-key>'
@@ -91,7 +91,7 @@ export default function HealthCheckPage() {
               language="python"
               code={`import requests
 
-url = "https://api.xscraper.xyz/api/v1/twitter/health"
+url = "https://api.xscraper.online/api/v1/twitter/health"
 headers = {
   "X-API-Key": "<your-api-key>"
 }

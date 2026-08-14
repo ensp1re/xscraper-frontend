@@ -68,14 +68,14 @@ export default function TrendsPage() {
             <CodeBlock
               language="bash"
               code={`curl -X GET \\
-  "https://api.xscraper.xyz/api/v1/twitter/trends" \\
+  "https://api.xscraper.online/api/v1/twitter/trends" \\
   -H "X-API-Key: <your-api-key>"`}
             />
           </TabsContent>
           <TabsContent value="javascript" className="mt-2">
             <CodeBlock
               language="javascript"
-              code={`fetch('https://api.xscraper.xyz/api/v1/twitter/trends', {
+              code={`fetch('https://api.xscraper.online/api/v1/twitter/trends', {
   method: 'GET',
   headers: {
     'X-API-Key': '<your-api-key>'
@@ -91,7 +91,7 @@ export default function TrendsPage() {
               language="python"
               code={`import requests
 
-url = "https://api.xscraper.xyz/api/v1/twitter/trends"
+url = "https://api.xscraper.online/api/v1/twitter/trends"
 headers = {
   "X-API-Key": "<your-api-key>"
 }

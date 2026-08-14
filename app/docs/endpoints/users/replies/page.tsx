@@ -84,14 +84,14 @@ export default function UserRepliesPage() {
             <CodeBlock
               language="bash"
               code={`curl -X GET \\
-"https://api.xscraper.xyz/api/v1/twitter/users/replies/elonmusk?count=10" \\
+"https://api.xscraper.online/api/v1/twitter/users/replies/elonmusk?count=10" \\
 -H "X-API-Key: <your-api-key>"`}
             />
           </TabsContent>
           <TabsContent value="javascript" className="mt-2">
             <CodeBlock
               language="javascript"
-              code={`fetch('https://api.xscraper.xyz/api/v1/twitter/users/replies/elonmusk?count=10', {
+              code={`fetch('https://api.xscraper.online/api/v1/twitter/users/replies/elonmusk?count=10', {
 method: 'GET',
 headers: {
   'X-API-Key': '<your-api-key>'
@@ -107,7 +107,7 @@ headers: {
               language="python"
               code={`import requests
 
-url = "https://api.xscraper.xyz/api/v1/twitter/users/replies/elonmusk"
+url = "https://api.xscraper.online/api/v1/twitter/users/replies/elonmusk"
 params = {
   "count": 10
 }

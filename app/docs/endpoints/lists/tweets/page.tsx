@@ -90,14 +90,14 @@ export default function ListTweetsPage() {
             <CodeBlock
               language="bash"
               code={`curl -X GET \\
-  "https://api.xscraper.xyz/api/v1/twitter/lists/1580661677227986944/tweets?count=20" \\
+  "https://api.xscraper.online/api/v1/twitter/lists/1580661677227986944/tweets?count=20" \\
   -H "X-API-Key: <your-api-key>"`}
             />
           </TabsContent>
           <TabsContent value="javascript" className="mt-2">
             <CodeBlock
               language="javascript"
-              code={`fetch('https://api.xscraper.xyz/api/v1/twitter/lists/1580661677227986944/tweets?count=20', {
+              code={`fetch('https://api.xscraper.online/api/v1/twitter/lists/1580661677227986944/tweets?count=20', {
   method: 'GET',
   headers: {
     'X-API-Key': '<your-api-key>'
@@ -113,7 +113,7 @@ export default function ListTweetsPage() {
               language="python"
               code={`import requests
 
-url = "https://api.xscraper.xyz/api/v1/twitter/lists/1580661677227986944/tweets"
+url = "https://api.xscraper.online/api/v1/twitter/lists/1580661677227986944/tweets"
 params = {
   "count": 20
 }

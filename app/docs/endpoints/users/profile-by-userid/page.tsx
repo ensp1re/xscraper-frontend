@@ -77,14 +77,14 @@ export default function ProfileByUserIdPage() {
             <CodeBlock
               language="bash"
               code={`curl -X GET \\
-  "https://api.xscraper.xyz/api/v1/twitter/users/profile_by_userid/44196397" \\
+  "https://api.xscraper.online/api/v1/twitter/users/profile_by_userid/44196397" \\
   -H "X-API-Key: <your-api-key>"`}
             />
           </TabsContent>
           <TabsContent value="javascript" className="mt-2">
             <CodeBlock
               language="javascript"
-              code={`fetch('https://api.xscraper.xyz/api/v1/twitter/users/profile_by_userid/44196397', {
+              code={`fetch('https://api.xscraper.online/api/v1/twitter/users/profile_by_userid/44196397', {
   method: 'GET',
   headers: {
     'X-API-Key': '<your-api-key>'
@@ -100,7 +100,7 @@ export default function ProfileByUserIdPage() {
               language="python"
               code={`import requests
 
-url = "https://api.xscraper.xyz/api/v1/twitter/users/profile_by_userid/44196397"
+url = "https://api.xscraper.online/api/v1/twitter/users/profile_by_userid/44196397"
 headers = {
     "X-API-Key": "<your-api-key>"
 }

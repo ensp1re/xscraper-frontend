@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils"
 import { Badge } from "@/components/ui/badge"
 import { useToast } from "@/hooks/use-toast"
 
+const BASE_API_URL = "https://api.xscraper.online"
 
 interface TryItDialogProps {
   open: boolean
@@ -83,7 +84,7 @@ export default function TryItDialog({ open, onOpenChange, endpoint, method, para
   // Generate code snippet based on selected language
   const generateCodeSnippet = () => {
     const formattedEndpoint = formatEndpoint(endpoint, paramValues)
-    const apiUrl = `https://api.xscraper.xyz${formattedEndpoint}`
+    const apiUrl = `${BASE_API_URL}${formattedEndpoint}`
 
     switch (codeLanguage) {
       case "curl":
@@ -216,7 +217,7 @@ public class Main {
 
     // Get the formatted endpoint for the API call
     const formattedEndpoint = formatEndpoint(endpoint, paramValues)
-    const apiUrl = `https://api.xscraper.xyz${formattedEndpoint}`
+    const apiUrl = `${BASE_API_URL}${formattedEndpoint}`
 
     try {
       // Make the actual API call

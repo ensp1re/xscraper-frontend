@@ -90,14 +90,14 @@ export default function UserFollowingPage() {
             <CodeBlock
               language="bash"
               code={`curl -X GET \\
-"https://api.xscraper.xyz/api/v1/twitter/users/following/44196397?limit=10" \\
+"https://api.xscraper.online/api/v1/twitter/users/following/44196397?limit=10" \\
 -H "X-API-Key: <your-api-key>"`}
             />
           </TabsContent>
           <TabsContent value="javascript" className="mt-2">
             <CodeBlock
               language="javascript"
-              code={`fetch('https://api.xscraper.xyz/api/v1/twitter/users/following/44196397?limit=10', {
+              code={`fetch('https://api.xscraper.online/api/v1/twitter/users/following/44196397?limit=10', {
 method: 'GET',
 headers: {
   'X-API-Key': '<your-api-key>'
@@ -113,7 +113,7 @@ headers: {
               language="python"
               code={`import requests
 
-url = "https://api.xscraper.xyz/api/v1/twitter/users/following/44196397"
+url = "https://api.xscraper.online/api/v1/twitter/users/following/44196397"
 params = {
   "limit": 10
 }

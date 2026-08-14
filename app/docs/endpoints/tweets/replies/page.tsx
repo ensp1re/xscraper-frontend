@@ -83,14 +83,14 @@ export default function TweetRepliesPage() {
             <CodeBlock
               language="bash"
               code={`curl -X GET \\
-"https://api.xscraper.xyz/api/v1/twitter/tweets/1722715025402413077/replies" \\
+"https://api.xscraper.online/api/v1/twitter/tweets/1722715025402413077/replies" \\
 -H "X-API-Key: <your-api-key>"`}
             />
           </TabsContent>
           <TabsContent value="javascript" className="mt-2">
             <CodeBlock
               language="javascript"
-              code={`fetch('https://api.xscraper.xyz/api/v1/twitter/tweets/1722715025402413077/replies', {
+              code={`fetch('https://api.xscraper.online/api/v1/twitter/tweets/1722715025402413077/replies', {
   method: 'GET',
   headers: {
     'X-API-Key': '<your-api-key>'
@@ -106,7 +106,7 @@ export default function TweetRepliesPage() {
               language="python"
               code={`import requests
 
-url = "https://api.xscraper.xyz/api/v1/twitter/tweets/1722715025402413077/replies"
+url = "https://api.xscraper.online/api/v1/twitter/tweets/1722715025402413077/replies"
 headers = {
   "X-API-Key": "<your-api-key>"
 }
